@@ -1,0 +1,33 @@
+{
+  "type": "module",
+  "dependencies": {
+    "backup": "file:..",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.4",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.16.3",
+    "multer": "^2.0.2",
+    "nodemon": "^3.1.10",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1",
+    "xlsx": "^0.18.5",
+    "@supabase/supabase-js": "^2.95.3",
+    "socket.io": "^4.8.3",
+    "mqtt": "^5.15.0",
+    "bcrypt": "^6.0.0"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Khorzyy",
+  "license": "ISC",
+  "description": "Merge Depende"
+}

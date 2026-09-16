@@ -1,0 +1,7 @@
+packages:
+  - 'apps/*'
+allowBuilds:
+  '@scarf/scarf': false
+  bcrypt: true
+  core-js: false
+  core-js-pure: false

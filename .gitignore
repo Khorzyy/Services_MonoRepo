@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Local Environment Variables (CRITICAL: Do not upload your Supabase/Mongo keys!)
+.env
+.env.local
+.env.*.local
+
+# Build outputs & caches
+dist/
+build/
+.turbo/
+out/
+npm-debug.log*
+pnpm-debug.log*
+
+# System Files
+.DS_Store
+Thumbs.db
