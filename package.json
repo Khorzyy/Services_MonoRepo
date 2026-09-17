@@ -2,7 +2,7 @@
   "name": "mega-monorepo",
   "version": "1.0",
   "description": "All of my prjects in one monorepo",
-  "private": "true",
+  "private": true,
   "keywords": [],
   "author": "Khorzyy",
   "license": "ISC",
@@ -12,31 +12,14 @@
   "devDependencies": {
     "turbo": "^2.10.13"
   },
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:backends": "turbo run dev --filter=Backend",
+    "build": "turbo run build",
+    "test": "turbo run test"
+  },
   "packageManager": "pnpm@12.4.2+sha512.08adc6613180275c7c9edada39dcf08c9c61ad4e7eaf330a4f3461f102b0f907423454d117f98e72d47fef0616070644d7bffc973a6a57f5090a6d7c368b07c9",
-  "turbo": {
-    "schema": "https://turbo.build",
-    "pipeline": {
-      "lint": {},
-      "build": {
-        "dependsOn": [
-          "^build"
-        ]
-      },
-      "test": {
-        "dependsOn": [
-          "^test"
-        ]
-      },
-      "deploy": {
-        "dependsOn": [
-          "build",
-          "test",
-          "lint"
-        ]
-      },
-      "dev": {
-        "cache": false
-      }
-    }
+  "dependencies": {
+    "react-helmet": "^6.1.0"
   }
 }

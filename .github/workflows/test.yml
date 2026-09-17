@@ -1,0 +1,37 @@
+name: Testing
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Pull down the code from repo (Upgraded to v4 for speed)
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Setup pnpm engine (Fixed typo from pnpn/actions to pnpm/action)
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12
+      
+      # 3. Setup Node 22 natively (Upgraded to v4 to match actions lifecycle)
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm' # Automatically caches packages to speed up your PR build time!
+
+      # 4. Correct commands for your monorepo workspace
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run test suites
+        run: pnpm test
+
+      - name: Verify production builds
+        run: pnpm run build
