@@ -21,7 +21,7 @@ const app = express();
 
 // ParkirentMiddleware
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: process.env.FRONTEND_URL,
     credentials: true,
 }));
 app.use(express.json());
@@ -41,7 +41,7 @@ app.use('/admin', adminRoutes);
 app.use('/api/admin', OpendataAuthRoutes);
 app.use('/api/tables', tableRoutes);
 app.use('/api/data', dataRoutes);
-app.use('/tables', uploadRoutes);
+app.use('/api/tables', uploadRoutes);
 
 // Protected Openndata Route
 app.get('/api/admin/dashboard', verifyToken, (req, res) => {
