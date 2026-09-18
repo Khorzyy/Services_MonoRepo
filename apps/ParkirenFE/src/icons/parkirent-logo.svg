@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org">
+  <!-- Background Frame Utama Indigo -->
+  <rect width="512" height="512" rx="60" fill="#465FFF"/>
+  
+  <!-- Frame Putih Ikon (Hampir Full) -->
+  <rect x="56" y="50" width="400" height="300" rx="45" stroke="white" stroke-width="35"/>
+  
+  <!-- Siluet Mobil Minimalis (Putih) -->
+  <path d="M140 280 H372 L345 200 C340 185 330 175 315 175 H197 C182 175 172 185 167 200 L140 280 Z" fill="white"/>
+  <rect x="160" y="280" width="50" height="25" rx="8" fill="white"/>
+  <rect x="302" y="280" width="50" height="25" rx="8" fill="white"/>
+  
+  <!-- Huruf P (Indigo - Di atas mobil) -->
+  <path d="M215 190 V265 M215 190 H255 C268 190 278 200 278 212 C278 224 268 234 255 234 H215" stroke="#465FFF" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Aksen Sensor Smart Parking (Soft Purple) -->
+  <path d="M380 130 C395 145 395 175 380 190" stroke="#7A5AF8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M405 110 C430 135 430 185 405 210" stroke="#7A5AF8" stroke-width="8" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Teks ParkiRent -->
+  <text x="50%" y="450" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="78" fill="white">ParkiRent</text>
+</svg>
