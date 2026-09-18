@@ -16,8 +16,6 @@ jobs:
       # 2. Setup pnpm engine (Fixed typo from pnpn/actions to pnpm/action)
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
-        with:
-          version: 12
       
       # 3. Setup Node 22 natively (Upgraded to v4 to match actions lifecycle)
       - name: Setup Node 22

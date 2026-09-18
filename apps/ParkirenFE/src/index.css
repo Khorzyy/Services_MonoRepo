@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-blue: #0052ff;
+  --brand-blue-active: #003ecc;
+  --ink: #0a0b0d;
+  --body: #5b616e;
+  --hairline: #dee1e6;
+  --surface-soft: #f7f7f7;
+  --surface-strong: #eef0f3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: #fff;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jakarta {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
+.jakarta button:not([role="switch"]) {
+  border-radius: 9999px !important;
+}
+
+/* Action controls use pills; selectable content cards retain card geometry. */
+.jakarta button.role-card {
+  border-radius: 24px !important;
+}
+
+.jakarta input,
+.jakarta select {
+  min-height: 48px;
+}
+
+.jakarta h1,
+.jakarta h2 {
+  font-weight: 400 !important;
+  letter-spacing: -0.035em;
+}
+
+.jakarta h3 {
+  font-weight: 600 !important;
+}
+
+.jakarta [class*="shadow-"] {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
