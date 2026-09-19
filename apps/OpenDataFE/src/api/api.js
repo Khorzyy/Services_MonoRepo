@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // Base API atau api awal sebelum di tammbahkan pakai /tables atau /data/:id(untuk id table yang dipilih)
 const API = axios.create({
-  baseURL: process.env.API,
+  baseURL: process.env.REACT_APP_API_URL,
 });
 
 // GET: Semua tabel (metadata file)
