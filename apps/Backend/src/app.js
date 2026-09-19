@@ -21,7 +21,8 @@ const app = express();
 
 // ParkirentMiddleware
 app.use(cors({
-    origin: process.env.FRONTEND_URL || "http://localhost:3000",
+    origin: [process.env.PARKIRENTFRONTEND_URL, process.env.OPENDATAFRONTEND_URL],
+
     credentials: true,
 }));
 app.use(express.json());
