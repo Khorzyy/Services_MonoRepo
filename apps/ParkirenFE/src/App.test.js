@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { AppWrapper } from './components/common/PageMeta';
 import App from './App';
 
 test('renders the home page', () => {
   render(
-    <MemoryRouter initialEntries={['/']}>
+    <AppWrapper>
       <App />
-    </MemoryRouter>
-  )
+    </AppWrapper>
+  );
 });
