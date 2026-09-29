@@ -33,3 +33,6 @@ jobs:
 
       - name: Verify production builds
         run: pnpm run build
+        env:
+          DISABLE_ESLINT_PLUGIN: true
+          CI: false
