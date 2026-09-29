@@ -4,8 +4,6 @@ import App from './App';
 
 test('renders the home page', () => {
   render(
-    <AppWrapper>
-      <App />
-    </AppWrapper>
+    <App />
   );
 });
